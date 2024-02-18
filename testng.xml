@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="methods" name="Suite">
+	<listeners>
+		<listener class-name="Listener.Listeners"/>
+	</listeners>
+  <test  parallel="tests" name="Test">
+	  <groups>
+		  <run>
+			  <include name="Qaisr"></include>
+			  
+			  <exclude name="r"></exclude>
+		  </run>
+	  </groups>
+    <classes>
+		   
+                  <class name="qaisr.Login" />
+                                    <class name="qaisr.RPS"/>
+                                                      <class name="qaisr.ToDo"/>
+<class name="qaisr.qCards"/>
+<class name="qaisr.pumpingLemma"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
